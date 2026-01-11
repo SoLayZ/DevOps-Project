@@ -11,12 +11,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn clean install -s settings.xml
+      - mvn -s settings.xml compile
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Packaging artifacts...
-      - mvn package -s settings.xml
+      - mvn -s settings.xml package
 artifacts:
   files:
     - target/*.war
