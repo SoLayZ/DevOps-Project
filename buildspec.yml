@@ -20,5 +20,7 @@ phases:
 
 artifacts:
   files:
-    - target/devops-project.war
+    - target/devops-cicd.war
+    - appspec.yml
+    - scripts/**/*
   discard-paths: no
