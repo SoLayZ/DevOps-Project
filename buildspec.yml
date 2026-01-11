@@ -20,5 +20,5 @@ phases:
 
 artifacts:
   files:
-    - target/devops-cicd.war
+    - target/devops-project.war
   discard-paths: no
