@@ -11,12 +11,13 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn -s settings.xml compile
+      - mvn clean package -s settings.xml
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Packaging artifacts...
-      - mvn -s settings.xml package
+      - mvn package -s settings.xml
+
 artifacts:
   files:
     - target/devops-cicd.war
